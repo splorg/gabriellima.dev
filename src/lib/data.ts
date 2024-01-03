@@ -13,7 +13,7 @@ export const PROJECTS: Project[] = [
     description: 'Fully-featured anime-themed website for browsing 4chan boards. Utilizing responsive and mobile-first design, SEO and optimization best practices, and the most recent paradigms of the App Router and React Server Components (RSCs).',
     technologies: ['TypeScript', 'Next.js 14', 'React', 'Tailwind CSS', 'Zustand'],
     imageSrc: '/kurokichan.webp',
-    link: 'https://kurokichan.com',
+    link: 'https://kurokichan.com/?p=true',
   },
   {
     title: 'Card Generator API',
