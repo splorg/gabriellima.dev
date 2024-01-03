@@ -4,6 +4,7 @@ export type Project = {
   technologies: string[]
   imageSrc?: string
   link: string
+  linkLabel: string
 }
 
 export type WorkExperience = {

@@ -7,6 +7,7 @@ export const PROJECTS: Project[] = [
     technologies: ['TypeScript', 'React Native', 'Node.js', 'NestJS', 'Prisma', 'PostgreSQL', 'Cloudinary', 'Jest', 'Docker'],
     imageSrc: '/imobify.webp',
     link: 'https://github.com/imobify',
+    linkLabel: 'github.com/imobify'
   },
   {
     title: 'Kuroki-chan',
@@ -14,12 +15,14 @@ export const PROJECTS: Project[] = [
     technologies: ['TypeScript', 'Next.js 14', 'React', 'Tailwind CSS', 'Zustand'],
     imageSrc: '/kurokichan.webp',
     link: 'https://kurokichan.com/?p=true',
+    linkLabel: 'kurokichan.com'
   },
   {
     title: 'Card Generator API',
     description: 'REST API for creating and querying cards based on the game Inscryption.',
     technologies: ['TypeScript', 'Node.js', 'Express.js', 'Mongoose', 'MongoDB', 'Docker'],
     link: 'https://github.com/splorg/card-generator-api',
+    linkLabel: 'github.com/splorg/card-generator-api'
   },
   {
     title: 'NadaGostoso',
@@ -27,6 +30,7 @@ export const PROJECTS: Project[] = [
     technologies: ['JavaScript', 'React Native', 'Node.js', 'Express.js', 'Mongoose', 'MongoDB'],
     imageSrc: '/nadagostoso.webp',
     link: 'https://github.com/splorg/nadagostoso-app',
+    linkLabel: 'github.com/splorg/nadagostoso-app'
   },
   {
     title: 'PokéMapa',
@@ -34,6 +38,7 @@ export const PROJECTS: Project[] = [
     technologies: ['JavaScript', 'React Native', 'Node.js', 'Express.js', 'Mongoose', 'MongoDB'],
     imageSrc: '/pokemapa.webp',
     link: 'https://github.com/splorg/pokemapa',
+    linkLabel: 'github.com/splorg/pokemapa'
   },
 ]
 

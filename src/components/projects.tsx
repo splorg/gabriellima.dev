@@ -11,6 +11,7 @@ export const Projects = () => {
           title={project.title}
           description={project.description}
           link={project.link}
+          linkLabel={project.linkLabel}
           technologies={project.technologies}
           imageSrc={project.imageSrc}
           key={project.title}

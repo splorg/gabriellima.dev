@@ -2,7 +2,7 @@ import { Project } from '@/lib/definitions'
 
 import { ExternalLink } from './external-link'
 
-export const ProjectCard = ({ title, description, imageSrc, technologies, link }: Project) => {
+export const ProjectCard = ({ title, description, imageSrc, technologies, link, linkLabel }: Project) => {
   return (
     <div className="py-4 flex flex-col gap-4 items-center lg:flex-row lg:items-start">
       {imageSrc ? (
@@ -15,7 +15,7 @@ export const ProjectCard = ({ title, description, imageSrc, technologies, link }
       <div className="flex flex-col gap-4 text-justify">
         <p className="font-medium text-tertiary">{title}</p>
         <span>
-          <ExternalLink label={link.replace('https://', '').replace('http://', '')} href={link} />
+          <ExternalLink label={linkLabel} href={link} />
         </span>
         <p className="text-secondary">{description}</p>
         <div className="flex flex-wrap gap-2">
