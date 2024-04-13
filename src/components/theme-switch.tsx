@@ -35,11 +35,13 @@ export const ThemeSwitch = () => {
   }
 
   return (
-    <button 
-      className={`text-secondary flex w-fit p-8 hover:cursor-pointer hover:text-primary transition-colors duration-300 ${!mounted ? 'animate-spin' : ''}`}
-      onClick={handleToggle}
-    >
-      {icon()}
-    </button>
+    <div className='mx-auto px-8 max-w-5xl lg:flex lg:px-0'>
+      <button 
+        className={`text-secondary flex w-fit p-8 hover:cursor-pointer hover:text-primary transition-colors duration-300 ${!mounted ? 'animate-spin' : ''}`}
+        onClick={handleToggle}
+      >
+        {icon()}
+      </button>
+    </div>
   )
 }
