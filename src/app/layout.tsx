@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     siteName: 'splorg.online',
     images: [
       {
-        url: 'https://avatars.githubusercontent.com/u/99323971?v=4',
+        url: 'https://github.com/splorg.png',
       }
     ],
     locale: 'en_US',
