@@ -8,7 +8,7 @@ export const Profile = () => {
       <div>
         <div className="w-60 h-60 rounded-full overflow-hidden mx-auto lg:w-60 lg:h-60">
           <img
-            src="/profile.webp"
+            src="https://github.com/splorg.png"
             alt="Gabriel Lima's Github avatar."
             className="object-cover"
           />
