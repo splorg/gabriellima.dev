@@ -4,6 +4,7 @@
 
 @layer base {
   html {
+    scrollbar-gutter: stable;
     @apply max-h-screen antialiased;
   }
 

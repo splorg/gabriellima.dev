@@ -39,5 +39,6 @@
       "error",
       "never"
     ]
-  }
+  },
+  "ignorePatterns": ["**/*.css","**/*.scss"]
 }
