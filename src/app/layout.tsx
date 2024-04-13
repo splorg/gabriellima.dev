@@ -56,7 +56,20 @@ export const metadata: Metadata = {
     site: 'splorg.online',
     title: 'splorg.online',
   },
-  metadataBase: new URL('https://splorg.online')
+  metadataBase: new URL('https://splorg.online'),
+  openGraph: {
+    title: 'splorg.online',
+    description: ABOUT_ME[0],
+    url: 'https://splorg.online',
+    siteName: 'splorg.online',
+    images: [
+      {
+        url: 'https://avatars.githubusercontent.com/u/99323971?v=4',
+      }
+    ],
+    locale: 'en_US',
+    type:  'website'
+  }
 }
 
 export default function RootLayout({
