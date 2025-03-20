@@ -80,7 +80,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} h-full min-h-screen relative w-full bg-neutral-200 dark:bg-neutral-900 motion-reduce:transform-none motion-reduce:transition-none`}>
+      <body className={`${inter.className} h-full min-h-screen py-4 relative w-full bg-neutral-200 dark:bg-neutral-900 motion-reduce:transform-none motion-reduce:transition-none`}>
         <Background />
         <Providers>
           <ThemeSwitch />

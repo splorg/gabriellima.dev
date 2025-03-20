@@ -5,7 +5,7 @@ import { Projects } from '@/components/projects'
 
 const Home = () => {
   return (
-    <main className="mx-auto mb-8 py-4 px-8 max-w-5xl lg:flex lg:px-0">
+    <main className="mx-auto mb-8 p-4 max-w-5xl lg:flex lg:px-0">
       <Profile />
       <div>
         <AboutMe />
