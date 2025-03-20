@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  authors: [{ name: 'Gabriel Lima', url: 'https://splorg.online' }],
+  authors: [{ name: 'Gabriel Lima', url: 'https://gabriellima.dev' }],
   creator: 'Gabriel Lima',
   description: ABOUT_ME[0],
   keywords: [
@@ -50,18 +50,18 @@ export const metadata: Metadata = {
     },
     index: true,
   },
-  title: 'splorg.online',
+  title: 'Gabriel Lima',
   twitter: {
     card: 'summary_large_image',
-    site: 'splorg.online',
-    title: 'splorg.online',
+    site: 'gabriellima.dev',
+    title: 'Gabriel Lima',
   },
-  metadataBase: new URL('https://splorg.online'),
+  metadataBase: new URL('https://gabriellima.dev'),
   openGraph: {
-    title: 'splorg.online',
+    title: 'Gabriel Lima',
     description: ABOUT_ME[0],
-    url: 'https://splorg.online',
-    siteName: 'splorg.online',
+    url: 'https://gabriellima.dev',
+    siteName: 'Gabriel Lima',
     images: [
       {
         url: 'https://github.com/splorg.png',

@@ -6,15 +6,14 @@ import { CollapsableSection } from './collapsable-section'
 export const Work = () => {
   return (
     <CollapsableSection title="Work">
-      {WORK.map(work => (
-        <WorkCard
-          key={work.companyName}
-          companyName={work.companyName}
-          companyDescription={work.companyDescription}
-          period={work.period}
-          workDescription={work.workDescription}
-        />
-      ))}
+      <div className="flex flex-col gap-4">
+        {WORK.map(work => (
+          <WorkCard
+            key={work.companyName}
+            work={work}
+          />
+        ))}
+      </div>
     </CollapsableSection>
   )
 }

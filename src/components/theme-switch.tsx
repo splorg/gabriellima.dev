@@ -22,20 +22,20 @@ export const ThemeSwitch = () => {
 
   const icon = () => {
     if (!mounted) return (
-      <PiSpinner />
+      <PiSpinner className="size-5" />
     )
   
     if (resolvedTheme === 'dark') {
-      return <PiSun />
+      return <PiSun className="size-5" />
     }
   
     if (resolvedTheme === 'light') {
-      return <PiMoon />
+      return <PiMoon className="size-5" />
     }
   }
 
   return (
-    <div className='mx-auto px-8 max-w-5xl lg:flex lg:px-0'>
+    <div className='flex w-full justify-end mx-auto px-8 max-w-5xl lg:flex lg:px-0'>
       <button 
         className={`text-secondary flex w-fit p-8 hover:cursor-pointer hover:text-primary transition-colors duration-300 ${!mounted ? 'animate-spin' : ''}`}
         onClick={handleToggle}

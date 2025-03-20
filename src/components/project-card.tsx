@@ -1,6 +1,7 @@
 import { Project } from '@/lib/definitions'
 
 import { ExternalLink } from './external-link'
+import { Badge } from './badge'
 
 export const ProjectCard = ({ title, description, imageSrc, technologies, link, linkLabel }: Project) => {
   return (
@@ -20,12 +21,10 @@ export const ProjectCard = ({ title, description, imageSrc, technologies, link, 
         <p className="text-secondary">{description}</p>
         <div className="flex flex-wrap gap-2">
           {technologies.map(tech => (
-            <span 
+            <Badge
               key={tech}
-              className="bg-neutral-300 dark:bg-neutral-600 rounded p-1 text-sm text-tertiary"
-            >
-              {tech}
-            </span>
+              label={tech}
+            />
           ))}
         </div>
       </div>

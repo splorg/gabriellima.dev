@@ -12,4 +12,5 @@ export type WorkExperience = {
   period: string
   companyDescription: string
   workDescription: string
+  technologies: string[]
 }
