@@ -1,24 +1,26 @@
-import { PiArrowUpRight } from 'react-icons/pi'
+import { cn } from "@/lib/utils";
+import type { LinkHTMLAttributes } from "react";
+import { PiArrowUpRight } from "react-icons/pi";
 
-type Props = {
-  label: string
-  href: string
-}
+type Props = LinkHTMLAttributes<HTMLAnchorElement> & {
+	label: string;
+};
 
-export const ExternalLink = ({ label, href }: Props) => {
-  return (
-    <>
-      <a
-        className="inline-block gap-2 underline-offset-[3px] underline text-secondary hover:text-primary hover: transition-all duration-300"
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {label}
-      </a>
-      <span className="ml-1 mr-1 h-3 w-3 inline-block">
-        <PiArrowUpRight />
-      </span>
-    </>
-  )
-}
+export const ExternalLink = ({ label, className, ...props }: Props) => {
+	return (
+		<a
+			className={cn(
+				"flex items-center gap-1 underline-offset-[3px] underline text-secondary hover:text-primary hover: transition-all duration-300",
+				className,
+			)}
+			target="_blank"
+			rel="noopener noreferrer"
+			{...props}
+		>
+			<span>{label}</span>
+			<span className="size-3">
+				<PiArrowUpRight />
+			</span>
+		</a>
+	);
+};

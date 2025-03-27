@@ -1,16 +1,17 @@
 export type Project = {
-  title: string
-  description: string
-  technologies: string[]
-  imageSrc?: string
-  link: string
-  linkLabel: string
-}
+	title: string;
+	description: string;
+	technologies: string[];
+	imageSrc?: string;
+	link: string;
+	linkLabel: string;
+};
 
 export type WorkExperience = {
-  companyName: string
-  period: string
-  companyDescription: string
-  workDescription: string
-  technologies: string[]
-}
+	companyName: string;
+	period: string;
+	companyDescription: string;
+	workDescription: string;
+	technologies: string[];
+	location: string;
+};
