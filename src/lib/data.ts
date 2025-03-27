@@ -173,5 +173,5 @@ export const WORK: WorkExperience[] = [
 export const ABOUT_ME: string[] = [
 	"Full stack software engineer focused on web and mobile applications. I enjoy solving problems and building reliable, efficient solutions. Always looking to learn new technologies and connect with fellow developers.",
 	"Graduated with an A.S. in Systems Analysis and Development from FATEC, a public university in Brazil, in December 2023.",
-	"When not coding, I spend time gaming, working on side projects, and exploring my interests in cinema and literature.",
+	"Outside of work, I spend my time gaming, working on side projects, and exploring my interests in cinema and literature.",
 ];
