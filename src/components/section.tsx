@@ -1,13 +1,13 @@
-import { ReactNode } from 'react'
+import type { ReactNode } from "react";
 
 type Props = {
-  children: ReactNode
-}
+	children: ReactNode;
+};
 
 export const Section = ({ children }: Props) => {
-  return (
-    <section className="flex flex-col gap-4 px-4 lg:px-8 pb-8 text-secondary">
-      {children}
-    </section>
-  )
-}
+	return (
+		<section className="flex flex-col gap-4 px-4 mb-4 text-secondary">
+			{children}
+		</section>
+	);
+};

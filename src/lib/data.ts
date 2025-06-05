@@ -82,7 +82,7 @@ export const WORK: WorkExperience[] = [
 		location: "London, United Kingdom - Remote",
 		period: "February 2025 - Present",
 		companyDescription:
-			"A premium greengrocer supplier providing a platform for restaurants to manage orders and deliveries, as well as a home-delivery app for consumers.",
+			"A premium greengrocer providing a platform for restaurants to manage orders and deliveries, as well as a home-delivery app for consumers.",
 		workDescription:
 			"At Natoora, I am currently working in an international team as a full stack developer, developing internal systems and contributing to the company's code modernization initiative.",
 		technologies: [
