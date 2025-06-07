@@ -84,17 +84,18 @@ export const WORK: WorkExperience[] = [
 		companyDescription:
 			"A premium greengrocer providing a platform for restaurants to manage orders and deliveries, as well as a home-delivery app for consumers.",
 		workDescription:
-			"At Natoora, I am currently working in an international team as a full stack developer, developing internal systems and contributing to the company's code modernization initiative.",
+			"At Natoora, I am currently working in an international team as a mobile/front-end developer, developing the home delivery and wholesale (NatooraPro) apps and contributing to the company's code modernization initiative.",
 		technologies: [
 			"TypeScript",
 			"JavaScript",
-			"React",
+			"Expo",
 			"React Native",
+			"React",
+			"Redux",
+			"Redux Saga",
 			"Material UI",
 			"Jest",
 			"React Testing Library",
-			"Python",
-			"Django",
 			"Docker",
 		],
 	},
