@@ -6,7 +6,7 @@ export const Footer = () => {
 			<p>© 2023 - {new Date().getFullYear()} Gabriel Lima.</p>
 			<ExternalLink
 				label="Source"
-				href="https://github.com/splorg/splorg.online"
+				href="https://github.com/splorg/gabriellima.dev"
 			/>
 		</footer>
 	);
