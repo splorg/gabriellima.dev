@@ -1,20 +1,10 @@
-'use client'
-import { ReactNode } from 'react'
+import { ThemeProvider } from "next-themes";
+import type { FC, PropsWithChildren } from "react";
 
-import { ThemeProvider } from 'next-themes'
-
-type Props = {
-  children: ReactNode
-}
-
-export const Providers = ({ children }: Props) => {
+export const Providers: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <ThemeProvider
-      attribute="class"
-      defaultTheme="system"
-      disableTransitionOnChange
-    >
+    <ThemeProvider attribute="class" defaultTheme="dark">
       {children}
     </ThemeProvider>
-  )
-}
+  );
+};
