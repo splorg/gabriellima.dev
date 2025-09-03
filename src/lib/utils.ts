@@ -46,6 +46,7 @@ export function constructMetadata({
           height: 630,
         },
       ],
+      locale: "en_US",
     },
     twitter: {
       card: "summary_large_image",
@@ -59,7 +60,7 @@ export function constructMetadata({
     authors: [
       {
         name: "Gabriel Lima",
-        url: "https://github.com/splorg",
+        url: "https://linkedin.com/in/limabs002",
       },
     ],
     creator: "Gabriel Lima",
