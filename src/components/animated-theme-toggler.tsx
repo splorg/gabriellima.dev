@@ -61,8 +61,17 @@ export const AnimatedThemeToggler = ({ className }: props) => {
       type="button"
       ref={buttonRef}
       onClick={changeTheme}
-      className={cn(className)}
+      className={cn(
+        "relative flex items-center justify-center size-6",
+        className,
+      )}
+      aria-label="Toggle theme"
     >
+      {/**
+       * This is a trick to achieve a minimum of 48x48px touch target on mobile, meeting accessibility guidelines.
+       * https://youtu.be/soFSSkf4oVY
+       */}
+      <span className="absolute size-12 [@media(pointer:fine)]:hidden" />
       {isDarkMode ? (
         <SunDim className="size-5" />
       ) : (
