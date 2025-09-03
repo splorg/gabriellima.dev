@@ -1,16 +1,21 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { PT_Sans, PT_Serif } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
+import { Background } from "@/components/background";
+import { Footer } from "@/components/footer";
 import { absoluteUrl, constructMetadata } from "@/lib/utils";
 import { Providers } from "./providers";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const ptSans = PT_Sans({
+  variable: "--font-pt-sans",
+  weight: ["400", "700"],
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const ptSerif = PT_Serif({
+  variable: "--font-pt-serif",
+  weight: ["400", "700"],
   subsets: ["latin"],
 });
 
@@ -35,9 +40,16 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${ptSans.variable} ${ptSerif.variable} antialiased bg-background`}
       >
-        <Providers>{children}</Providers>
+        <Providers>
+          <Background />
+          <main className="mx-auto max-w-2xl my-10 sm:my-20 px-4 sm:px-8">
+            {children}
+          </main>
+          <Footer />
+        </Providers>
+        <Analytics />
       </body>
     </html>
   );
