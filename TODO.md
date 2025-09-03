@@ -1,7 +1,0 @@
-- [ ] Review colors
-  - [ ] Text colors
-  - [ ] Background colors
-  - [ ] Hovers
-- [ ] Consistency
-  - [ ] Hover states (dark to light / light to dark, transitions etc)
-  - [ ] Spacings

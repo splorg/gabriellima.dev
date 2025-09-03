@@ -7,15 +7,15 @@ export default function Home() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="-ml-0.5 leading-tight text-4xl font-bold font-serif">
+        <h1 className="-ml-0.5 text-foreground leading-tight text-4xl font-bold font-serif">
           Gabriel Lima
         </h1>
-        <h2 className="text-lg font-serif text-muted-foreground">
+        <h2 className="text-lg font-serif text-secondary-foreground">
           software engineer
         </h2>
       </div>
 
-      <div className="text-pretty text-muted-foreground font-serif space-y-4">
+      <div className="text-pretty text-foreground font-serif space-y-4">
         <p>
           Full stack software engineer experienced with web and mobile
           applications. I enjoy solving problems and building reliable,
@@ -27,7 +27,7 @@ export default function Home() {
           a public university in Brazil, in December 2023.
         </p>
 
-        <div className="flex gap-4 text-muted-foreground font-serif -mt-4">
+        <div className="flex gap-4 font-serif -mt-4">
           <ExternalLink href="https://github.com/splorg" label="GitHub" />
           <ExternalLink
             href="https://www.linkedin.com/in/limabs002/"
@@ -37,9 +37,7 @@ export default function Home() {
       </div>
 
       <div className="space-y-4">
-        <h3 className="text-xl font-bold font-serif text-muted-foreground">
-          Work
-        </h3>
+        <h3 className="text-xl font-bold font-serif text-foreground">Work</h3>
 
         <Accordion type="single" collapsible className="space-y-3">
           {WORK.map((work) => (

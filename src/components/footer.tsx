@@ -6,10 +6,10 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="text-muted-foreground font-serif text-sm border-t border-muted mx-auto max-w-2xl p-4 sm:px-8">
+    <footer className="text-muted-foreground font-serif border-t border-muted mx-auto max-w-2xl p-4 sm:px-8">
       <div className="flex items-center justify-between">
-        <p>© {currentYear} Gabriel Lima.</p>
-        <AnimatedThemeToggler className="hover:cursor-pointer hover:text-foreground transition-colors ease-out duration-200" />
+        <p className="text-sm">© {currentYear} Gabriel Lima.</p>
+        <AnimatedThemeToggler className="hover:cursor-pointer text-secondary-foreground focus:text-muted-foreground hover:text-muted-foreground transition-colors ease-out duration-200" />
       </div>
       <ExternalLink
         href="https://github.com/splorg/gabriellima.dev"

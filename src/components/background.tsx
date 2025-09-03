@@ -88,7 +88,7 @@ const Animation = () => {
     <Canvas
       camera={{ fov: 40, position: [0, 0, 5] }}
       gl={{ antialias: true }}
-      className="w-dvh h-dvh opacity-50"
+      className="w-dvh h-dvh opacity-40"
     >
       <Stars />
     </Canvas>
