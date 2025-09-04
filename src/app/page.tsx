@@ -22,12 +22,8 @@ export default function Home() {
           efficient solutions. Always looking to learn new technologies and
           connect with fellow developers.
         </p>
-        <p>
-          Graduated with an A.S. in Systems Analysis and Development from FATEC,
-          a public university in Brazil, in December 2023.
-        </p>
 
-        <div className="flex gap-4 font-serif -mt-4">
+        <div className="flex gap-4">
           <ExternalLink href="https://github.com/splorg" label="GitHub" />
           <ExternalLink
             href="https://www.linkedin.com/in/limabs002/"
