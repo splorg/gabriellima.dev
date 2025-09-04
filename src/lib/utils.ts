@@ -1,6 +1,7 @@
 import { type ClassValue, clsx } from "clsx";
 import type { Metadata } from "next";
 import { twMerge } from "tailwind-merge";
+import { siteConfig } from "@/config/site";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -39,6 +40,8 @@ export function constructMetadata({
       title,
       description,
       type: "website",
+      url: absoluteUrl(""),
+      siteName: "Gabriel Lima's portfolio",
       images: [
         {
           url: image,
