@@ -11,14 +11,14 @@ export function absoluteUrl(path: string) {
 }
 
 export function constructMetadata({
-  title = "Gabriel Lima",
-  description = "Gabriel Lima is a full-stack software engineer and developer based in Brazil.",
-  image = absoluteUrl("/og"),
+  title,
+  description,
+  image,
   ...props
 }: {
-  title?: string;
-  description?: string;
-  image?: string;
+  title: string;
+  description: string;
+  image: string;
   [key: string]: Metadata[keyof Metadata];
 }): Metadata {
   return {

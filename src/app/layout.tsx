@@ -4,6 +4,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { Background } from "@/components/background";
 import { Footer } from "@/components/footer";
+import { siteConfig } from "@/config/site";
 import { absoluteUrl, constructMetadata } from "@/lib/utils";
 import { Providers } from "./providers";
 
@@ -20,6 +21,8 @@ const ptSerif = PT_Serif({
 });
 
 export const metadata: Metadata = constructMetadata({
+  title: siteConfig.authorName,
+  description: siteConfig.fullDescription,
   image: absoluteUrl("/og"),
 });
 
@@ -40,7 +43,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body
-        className={`${ptSans.variable} ${ptSerif.variable} antialiased bg-background`}
+        className={`${ptSans.variable} ${ptSerif.variable} antialiased bg-background scroll-smooth`}
       >
         <Providers>
           <Background />
